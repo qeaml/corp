@@ -1,0 +1,14 @@
+If:
+  PathMatch: .+/.+/.+\.[ch](pp)?
+CompileFlags:
+  Add: [
+    -I../../include,
+  ]
+---
+
+If:
+  PathMatch: .+/trace/.+
+CompileFlags:
+  Add: [
+    -std=c++17,
+  ]

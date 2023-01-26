@@ -1,0 +1,20 @@
+[build]
+src = "source"
+incl = [
+  "include"
+]
+out = "target"
+obj = "target/build"
+cc = "msvc"
+
+[trace]
+lib = "trace"
+
+[trace.cpp]
+std = "c++17"
+
+[tracetest]
+exe = "tracetest"
+libs = [
+  "trace"
+]
